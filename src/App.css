@@ -93,6 +93,10 @@
   align-items: center;
 }
 
+.certificates{
+  height: 400px;
+}
+
 body > #root > div {
   height: 300vh;
 }
