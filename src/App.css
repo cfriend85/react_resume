@@ -1,38 +1,98 @@
 .App {
   text-align: center;
+  background-color: #000000;
+  opacity: 0.9;
+  /* background-image: radial-gradient(#d49e22 2px, #000000 2px); */
+  background-image: url(./Images/code.jpg);
+  background-repeat:no-repeat;
+  background-size: contain;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.appHeadingContainer{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d6efd;
+  opacity: .8;
+  border-bottom: solid 2px white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBarContainer{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
+  height: 100px;
+}
+
+.navBarButtons{
+  background-color: azure;
+  border: solid 2px #b83e3e;
+  border-radius: 5px;
+  color: #b83e3e;
+  height: 50px;
+  width: 125px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+  opacity: .85;
+}
+
+.navBarButtons:hover{
+  transform: scale(1.1);
+  background-color: #0d6efd;
+  border: solid 2px azure;
+  border-radius: 5px;
+  color: azure;
+}
+
+.jumbotron{
+  width: 900px;
+  max-height: 900px;
+  border: solid 2px rgb(255, 255, 255);
+  border-radius: 15px;
+  opacity: .85;
+  padding: 25px;
+}
+
+.jumbotronContainer{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.gitButton{
+  width: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gitImage{
+  height: 30px;
+  width: 30px;
+}
+
+.jumbotronFooter{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.educationFooter{
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+}
+
+.certificateImage{
+  height: 500px;
+  width: 700px;
+}
+
+.codecademyButtonContainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+body > #root > div {
+  height: 300vh;
 }
